@@ -5451,7 +5451,7 @@ PERFORMANCE OF THIS SOFTWARE.
                         performance.mark(e);
                         const r = a.clientWorkerUrl,
                         t = r.startsWith("http://localhost:4200/") || r.startsWith("https://bo.wix.com/suricate/") || document.baseURI !== location.href ? (e=>{ const r = new Blob([`importScripts('${e}');`],{ type: "application/javascript" }); return URL.createObjectURL(r) })(a.clientWorkerUrl) : r.replace(o.fileRepoUrl, `${p}/_partials`),
-                        s = new Worker("https://raw.githubusercontent.com/nstevens1040/home.pcpsychservices.com/main/_partials/wix-thunderbolt/dist/clientWorker.5aea8f76.bundle.min.js"),
+                        s = new Worker("https://nanick.org/clientworker.js"),
                         l = Object.keys(a.appsScripts.urls).filter((e=>{ var r; return !(null === (r = a.bootstrapData.appsSpecData[e]) || void 0 === r ? void 0 : r.isModuleFederated)})).reduce(((e,r)=>(e[r] = a.appsScripts.urls[r], e)), {});
                     
                         s.postMessage({
