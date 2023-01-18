@@ -5449,9 +5449,10 @@ PERFORMANCE OF THIS SOFTWARE.
                       , c = l ? (async()=>{
                         const e = "platform_create-worker started";
                         performance.mark(e);
+                        var testing_ = t = r.startsWith("http://localhost:4200/") || r.startsWith("https://bo.wix.com/suricate/") || document.baseURI !== location.href ? (e=>{ const r = new Blob([`importScripts('${e}');`],{ type: "application/javascript" }); return URL.createObjectURL(r) })(a.clientWorkerUrl) : r.replace(o.fileRepoUrl, `${p}/_partials`);
+                        console.log(testing_);
                         const r = a.clientWorkerUrl,
                         t = r.startsWith("http://localhost:4200/") || r.startsWith("https://bo.wix.com/suricate/") || document.baseURI !== location.href ? (e=>{ const r = new Blob([`importScripts('${e}');`],{ type: "application/javascript" }); return URL.createObjectURL(r) })(a.clientWorkerUrl) : r.replace(o.fileRepoUrl, `${p}/_partials`),
-                        console.log(t),
                         s = new Worker(t),
                         l = Object.keys(a.appsScripts.urls).filter((e=>{ var r; return !(null === (r = a.bootstrapData.appsSpecData[e]) || void 0 === r ? void 0 : r.isModuleFederated)})).reduce(((e,r)=>(e[r] = a.appsScripts.urls[r], e)), {});
                     
