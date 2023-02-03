@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <!-- <meta name="color-scheme" content="light dark"> -->
+    </head>
+    <body class="_theme-github">
+        <div id="_html" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            <h3 id="dns-records-needed-for-email--webpage-connectivty">
+                DNS records needed for email &amp; webpage connectivty
+            </h3>
+            <ul>
+                <li>The 'autodiscover' dns record need only be changed temporarily</li>
+                <li>The changes to the dns TXT record will not affect Microsoft 365 Exchange Online functionality</li>
+            </ul>
+            <table style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                <colgroup>
+                    <col/>
+                    <col style="width: 370px;"/>
+                    <col/>
+                    <col/>
+                    <col style="width: 1000px;"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap;">Action</th>
+                        <th style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap;">Name</th>
+                        <th style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap;">Type</th>
+                        <th style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap;">TTL</th>
+                        <th style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap;">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">edit current record</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">Use '@' or leave it blank</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">A</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copyone" style="display: inline;" href="#one" onclick="document.getElementById('one').select();document.execCommand('copy');document.getElementById('copyone').style.display = 'none'; document.getElementById('span1').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copyone').style.display = 'inline'; document.getElementById('span1').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span1">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="one">157.245.2.89</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">create new record</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">mail</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">A</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copytwo" style="display: inline;" href="#two" onclick="document.getElementById('two').select();document.execCommand('copy');document.getElementById('copytwo').style.display = 'none'; document.getElementById('span2').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copytwo').style.display = 'inline'; document.getElementById('span2').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span2">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="two">157.245.2.89</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">create new record</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">Use '@' or leave it blank</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">MX</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copythree" style="display: inline;" href="#three" onclick="document.getElementById('three').select();document.execCommand('copy');document.getElementById('copythree').style.display = 'none'; document.getElementById('span3').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copythree').style.display = 'inline'; document.getElementById('span3').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span3">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px; white-space: nowrap;" readonly spellcheck="false" id="three">10 mail.pcpsychservices.com</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">create new record</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">webmail</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">A</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copyfour" style="display: inline;" href="#four" onclick="document.getElementById('four').select();document.execCommand('copy');document.getElementById('copyfour').style.display = 'none'; document.getElementById('span4').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copyfour').style.display = 'inline'; document.getElementById('span4').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span4">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="four">157.245.2.89</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">edit current record</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">autodiscover</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">A</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copyfive" style="display: inline;" href="#five" onclick="document.getElementById('five').select();document.execCommand('copy');document.getElementById('copyfive').style.display = 'none'; document.getElementById('span5').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copyfive').style.display = 'inline'; document.getElementById('span5').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span5">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="five">157.245.2.89</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">create new record</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">bounce</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">A</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copysix" style="display: inline;" href="#six" onclick="document.getElementById('six').select();document.execCommand('copy');document.getElementById('copysix').style.display = 'none'; document.getElementById('span6').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copysix').style.display = 'inline'; document.getElementById('span6').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span6">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="six">157.245.2.89</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">create new record</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copyeight" style="display: inline;" href="#eight" onclick="document.getElementById('eight').select();document.execCommand('copy');document.getElementById('copyeight').style.display = 'none'; document.getElementById('span7').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copyeight').style.display = 'inline'; document.getElementById('span7').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span8">Copied</span>
+                            <textarea style="width: 355px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="eight">qmytrdjospim6xoya4t4qduyvvfgudd6._domainkey</textarea>
+                        </td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">CNAME</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copyseven" style="display: inline;" href="#seven" onclick="document.getElementById('seven').select();document.execCommand('copy');document.getElementById('copyseven').style.display = 'none'; document.getElementById('span8').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copyseven').style.display = 'inline'; document.getElementById('span8').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span7">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="seven">qmytrdjospim6xoya4t4qduyvvfgudd6.dkim.amazonses.com</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">create new record</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copynine" style="display: inline;" href="#nine" onclick="document.getElementById('nine').select();document.execCommand('copy');document.getElementById('copynine').style.display = 'none'; document.getElementById('span9').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copynine').style.display = 'inline'; document.getElementById('span9').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span9">Copied</span>
+                            <textarea style="width: 355px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="nine">6nnugjk26vd4nyhxmqcyepsvks7f27t6._domainkey</textarea>
+                        </td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">CNAME</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copyten" style="display: inline;" href="#ten" onclick="document.getElementById('ten').select();document.execCommand('copy');document.getElementById('copyten').style.display = 'none'; document.getElementById('span10').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copyten').style.display = 'inline'; document.getElementById('span10').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span10">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="ten">6nnugjk26vd4nyhxmqcyepsvks7f27t6.dkim.amazonses.com</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">create new record</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copyeleven" style="display: inline;" href="#eleven" onclick="document.getElementById('eleven').select();document.execCommand('copy');document.getElementById('copyeleven').style.display = 'none'; document.getElementById('span11').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copyeleven').style.display = 'inline'; document.getElementById('span11').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span11">Copied</span>
+                            <textarea style="width: 355px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="eleven">mysmfwg2zucaxi4z7j3eogs4vzk3kfww._domainkey</textarea>
+                        </td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">CNAME</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copytwelve" style="display: inline;" href="#twelve" onclick="document.getElementById('twelve').select();document.execCommand('copy');document.getElementById('copytwelve').style.display = 'none'; document.getElementById('span12').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copytwelve').style.display = 'inline'; document.getElementById('span12').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span12">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="twelve">mysmfwg2zucaxi4z7j3eogs4vzk3kfww.dkim.amazonses.com</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">edit current record</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">Use '@' or leave it blank</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">TXT</td>
+                        <td style="padding: 5px; border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">3600</td>
+                        <td style="border-collapse: collapse; border-spacing: 0px; border: 1px solid gray; white-space: nowrap; user-select: all;">
+                            <a id="copythirteen" style="display: inline;" href="#thirteen" onclick="document.getElementById('thirteen').select();document.execCommand('copy');document.getElementById('copythirteen').style.display = 'none'; document.getElementById('span13').style.display = 'inline'; setTimeout(()=>{ document.getElementById('copythirteen').style.display = 'inline'; document.getElementById('span13').style.display = 'none'; },3000);">Copy</a>
+                            <span style="display: none;" id="span13">Copied</span>
+                            <textarea style="width: 950px; border: none; outline: none; resize: none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; min-height: 22px; max-height: 22px; overflow: hidden; font-size: 16px; margin: 0px; padding: 0px;" readonly spellcheck="false" id="thirteen">v=spf1 mx a a:email-smtp.us-east-1.amazonaws.com ip4:157.245.2.89 include:amazonaws.com include:spf.protection.outlook.com -all</textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
